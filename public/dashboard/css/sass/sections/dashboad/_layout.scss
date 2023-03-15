@@ -1,0 +1,301 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboad {
+  width: 80%;
+  border: 2px solid $border-color;
+  min-height: 90vh;
+  border-radius: 2rem;
+  background: $primary-gradient-color;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+
+  .left_sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background: $primary-gradient-color;
+    border-radius: 2rem;
+    justify-content: start;
+    padding: 3rem 0;
+    z-index: 9;
+    transition: all 0.3s;
+
+    .close_btn {
+      margin-top: 4rem;
+      font-size: 1.4rem;
+      text-align: right;
+      margin-right: 1rem;
+      cursor: pointer;
+      color: $white-color;
+      display: none;
+    }
+
+    .user {
+      text-align: center;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+      }
+
+      .user_info {
+        text-align: left;
+        margin-left: 0.9rem;
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $primary-color;
+          line-height: 1.1;
+        }
+        p {
+          font-size: 0.8rem;
+          color: $primary-color;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .nav_links {
+      text-align: left;
+      margin: 0 3rem;
+
+      .link {
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid $border_color_2;
+        cursor: pointer;
+        color: $info-color;
+
+        h2 {
+          font-size: 1rem;
+          font-weight: 600;
+          text-transform: capitalize;
+          margin-left: 0.9rem;
+        }
+      }
+      .link:last-child {
+        border: 0;
+      }
+
+      .link:hover {
+        color: $primary-color;
+      }
+      .active {
+        color: $primary-color;
+      }
+    }
+  }
+
+  // side bar menu active
+  .left_sidebar.active_menu {
+    left: 0;
+    background: $secondary-gradient-color;
+    border: 2px solid $border_color_3;
+
+    .nav_links {
+      .link {
+        color: $white-color;
+      }
+      .link:hover {
+        color: $primary-color;
+      }
+
+      .active {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .dashboad_body {
+    flex: 3;
+    margin: 3rem 3rem 3rem 19rem;
+    padding-left: 3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .header {
+      margin-bottom: 3rem;
+
+      .title {
+        padding: 0.8rem 0;
+        h2 {
+          font-size: 2rem;
+          color: $primary-color;
+        }
+
+        // Toggler
+        .toggler {
+          padding: 0;
+          display: none;
+          font-size: 1.8rem;
+          color: $white-color;
+        }
+      }
+
+      .search_input {
+        width: 50%;
+        position: relative;
+
+        .tork-form-control {
+          background: $primary-gradient-color;
+          border-radius: 1rem;
+          border-color: $border_color;
+          border-width: 2px;
+          color: $info-color;
+          padding: 0.6rem 1rem;
+        }
+        span {
+          position: absolute;
+          right: 1rem;
+          top: 0.8rem;
+          font-size: 1.2rem;
+          line-height: 1.2;
+          color: $info-color;
+        }
+      }
+
+      .notificaton {
+        .alert_icon {
+          margin-left: 0.4rem;
+          position: relative;
+          display: inline-block;
+          color: $white-color;
+          font-size: 1.2rem;
+
+          .icon-envelope {
+            font-size: 0.9rem;
+          }
+
+          .badge {
+            background: $danger-color;
+            color: $white-color;
+            padding: 5px;
+            width: 1.2rem;
+            height: 1.2rem;
+            display: inline-block;
+            border-radius: 54rem;
+            line-height: 1.1;
+            font-size: 0.6rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  /* Custom scroll bar*/
+  .left_sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: $primary-color $info-color;
+  }
+
+  .left_sidebar::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .left_sidebar::-webkit-scrollbar-track {
+    background: $info-color;    
+  }
+
+  .left_sidebar::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 20px;
+    border: 3px solid $info-color;
+  }
+}
+
+.circle_1,
+.circle_2 {
+  height: 40rem;
+  width: 40rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(90deg, #80d8ff 0%, #ea80fc 100%);
+  opacity: 0.3;
+  filter: blur(250px);
+  z-index: 2;
+  border: 1px solid #000;
+}
+
+.circle_1 {
+  top: 0;
+  left: 0;
+}
+.circle_2 {
+  bottom: 0;
+  right: 0;
+}
+
+// Responsive
+@media only screen and (max-width: 992px) {
+  .dashboad {
+    width: 95%;
+
+    .left_sidebar {
+      left: -200%;
+      .close_btn {
+        display: block;
+      }
+    }
+
+    .dashboad_body {
+      margin: 3rem;
+      .header {
+        .title {
+          .toggler {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboad {
+    .dashboad_body {
+      margin: 2rem;
+      padding: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .dashboad {
+    .dashboad_body {
+      margin: 1rem;
+      padding: 1rem;
+
+      .header {
+        .search_input {
+          width: 100%;
+        }
+        .title {
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

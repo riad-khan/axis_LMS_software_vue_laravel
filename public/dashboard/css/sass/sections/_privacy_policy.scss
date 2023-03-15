@@ -1,0 +1,29 @@
+.privacy_policy {
+  padding: 4rem 0;
+
+  p {
+    color: $primary-color;
+    line-height: 1.6;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+
+  .benifits {
+    margin-top: 1.7rem;
+    margin-bottom: .75rem;
+    color: $primary-color;
+
+    h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-bottom: 0.4rem;
+    }
+
+    li {
+      span {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}

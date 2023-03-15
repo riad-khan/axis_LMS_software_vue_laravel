@@ -1,0 +1,157 @@
+.notice {
+  margin-top: 2rem;
+  width: 100%;
+
+  .tork-card {
+    border-radius: 1rem;
+    background: $primary-gradient-color;
+    overflow: hidden;
+    border: 1px solid $border_color;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .tork-card:first-child {
+    margin-top: 0;
+  }
+
+  .left_notice_card {
+    .alart_icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: inline-block;
+      line-height: 57px;
+      text-align: center;
+      background: $primary-color;
+      color: $white-color;
+      border-radius: 50%;
+      font-size: 1.6rem;
+    }
+
+    .info {
+      width: 48%;
+      h4 {
+        font-size: 1rem;
+        color: $primary-color;
+        line-height: 1.5;
+        font-weight: 600;
+      }
+      p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+        color: $info-color;
+      }
+    }
+
+    .toggle_btn {
+      transition: 0.3s;
+      span {
+        font-size: 1.7rem;
+        margin: 0 1rem;
+        color: $primary-color;
+        cursor: pointer;
+      }
+
+      .date_time {
+        font-size: 0.8rem;
+        color: $info-color;
+
+        span {
+          margin: 0.2rem;
+          font-size: 0.9rem;
+          color: $info-color;
+        }
+      }
+    }
+
+    .icon-angle-down.active {
+      transform: rotate(180deg);
+    }
+
+    .toggle_info {
+      margin-left: 4rem;
+      font-size: 0.8rem;
+      color: $primary-color;
+      margin-top: 0.8rem;
+      display: none;
+      padding: 0 1rem;
+
+      .time {
+        margin-bottom: 0.8rem;
+        color: $info-color;
+        font-size: 0.7rem;
+      }
+      .go_btn {
+        margin-top: 1rem;
+        padding: 0.3rem 2.5rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+    .toggle_info.active {
+      display: block;
+    }
+  }
+
+  .upcoming_notice {
+    padding: 1.4rem;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
+      color: $primary-color;
+    }
+    h4 {
+      font-size: 0.9rem;
+      color: $primary-color;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0.4rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .notice {
+    .left_notice_card {
+      .toggle_info {
+        margin-left: 0;
+      }
+
+      .alart_icon {
+        width: 3rem;
+        height: 3rem;
+        line-height: 50px;
+      }
+
+      .toggle_header {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .info {
+          width: 70%;
+          margin-left: 1rem;
+        }
+      }
+
+      .toggle_btn {
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1rem;
+
+        .date_time {
+          font-size: 0.8rem;
+          color: #bea7cf;
+          margin-left: 11px;
+        }
+      }
+    }
+  }
+}

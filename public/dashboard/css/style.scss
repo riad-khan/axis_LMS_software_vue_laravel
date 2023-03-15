@@ -1,0 +1,29 @@
+@import "sass/global-css/global";
+//------------------- components
+@import "sass/includes/components/cards";
+@import "sass/includes/components/button";
+@import "sass/includes/components/forms";
+@import "sass/includes/components/custom_selectbox";
+// ------------------- Sections
+main {
+  background: $body_bg_color_1;
+}
+
+@import "sass/sections/dashboad/layout";
+@import "sass/sections/dashboad/progress_bar";
+@import "sass/sections/dashboad/courses";
+@import "sass/sections/dashboad/exams";
+@import "sass/sections/dashboad/single_exam";
+@import "sass/sections/dashboad/profile";
+@import "sass/sections/dashboad/setting";
+@import "sass/sections/dashboad/signup";
+@import "sass/sections/dashboad/login";
+@import "sass/sections/dashboad/notice";
+@import "sass/sections/dashboad/schedule";
+@import "sass/sections/dashboad/class";
+@import "sass/sections/dashboad/watching_class";
+@import "sass/sections/dashboad/resources";
+@import "sass/sections/dashboad/result";
+@import "sass/sections/dashboad/result_overall";
+@import "sass/sections/dashboad/complaint_box";
+@import "sass/sections/dashboad/popup";

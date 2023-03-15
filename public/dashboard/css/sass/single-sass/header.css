@@ -1,0 +1,222 @@
+.tork-text-primary {
+  color: #662d91 !important;
+}
+
+.tork-text-primary-gradient {
+  color: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+}
+
+.tork-text-secondary {
+  color: #6c757d !important;
+}
+
+.tork-text-success {
+  color: #198754 !important;
+}
+
+.tork-text-info {
+  color: #bea7cf !important;
+}
+
+.tork-text-warning {
+  color: #ffce31 !important;
+}
+
+.tork-text-danger {
+  color: #e35a5a !important;
+}
+
+.tork-text-light {
+  color: #d7d7d7 !important;
+}
+
+.tork-text-white {
+  color: #ffffff !important;
+}
+
+.tork-text-dark {
+  color: #000000 !important;
+}
+
+.tork-bg-primary {
+  background: #662d91 !important;
+}
+
+.tork-bg-primary-gradient {
+  background: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+}
+
+.tork-bg-secondary {
+  background: #6c757d !important;
+}
+
+.tork-bg-success {
+  background: #198754 !important;
+}
+
+.tork-bg-info {
+  background: #bea7cf !important;
+}
+
+.tork-bg-warning {
+  background: #ffce31 !important;
+}
+
+.tork-bg-danger {
+  background: #e35a5a !important;
+}
+
+.tork-bg-light {
+  background: #d7d7d7 !important;
+}
+
+.tork-bg-white {
+  background: #ffffff !important;
+}
+
+.tork-bg-dark {
+  background: #000000 !important;
+}
+
+.header_section .top_navbar {
+  background: #F2F4FF;
+  padding: 0.2rem 0;
+}
+
+.header_section .top_navbar .contact_info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_section .top_navbar .contact_info a {
+  color: #000000;
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  line-height: 3;
+  font-weight: 400;
+}
+
+.header_section .top_navbar .contact_info a span {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #662d91;
+}
+
+.header_section .top_navbar .contact_info a:first-child {
+  margin-left: 0;
+}
+
+.header_section .top_navbar .contact_info a:hover {
+  color: #662d91;
+}
+
+.header_section .top_navbar .social_link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_section .top_navbar .social_link a {
+  font-size: 1.4rem;
+  color: #662d91;
+  margin-left: 0.75rem;
+}
+
+.header_section .top_navbar .social_link a:first-child {
+  margin-left: 0;
+}
+
+.header_section .top_navbar .social_link a:hover {
+  color: #000000;
+}
+
+.header_section .main_nav .logo {
+  width: 15rem;
+  padding: 0.625rem 0;
+}
+
+.header_section .main_nav .logo img {
+  width: 100%;
+}
+
+.header_section .main_nav .menu_items {
+  margin-top: 1rem;
+}
+
+.header_section .main_nav .menu_items .nav_link {
+  padding: 0.625rem 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: capitalize;
+  line-height: 1.8;
+}
+
+.header_section .main_nav .menu_items .nav_link a {
+  color: #000000;
+}
+
+.header_section .main_nav .menu_items .nav_link a:hover {
+  color: #662d91;
+}
+
+.header_section .main_nav .menu_items .nav_btn a {
+  padding: 0.5rem 2.5rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 6px 11px -3px rgba(102, 45, 145, 0.39);
+          box-shadow: 0px 6px 11px -3px rgba(102, 45, 145, 0.39);
+}
+
+.header_section .main_nav .menu_items .active a {
+  color: #662d91;
+}
+
+.header_section .main_nav .menu_items .dropdown {
+  cursor: pointer;
+}
+
+.header_section .main_nav .menu_items .dropdown:hover {
+  color: #662d91;
+}
+
+.header_section .main_nav .menu_items .dropdown:hover .dropdown_menu {
+  display: block;
+}
+
+.header_section .main_nav .menu_items .dropdown .dropdown_menu {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid rgba(96, 110, 180, 0.2);
+  z-index: 9;
+  margin-top: 8px;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  display: none;
+  width: 12rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 6px 11px -3px rgba(102, 45, 145, 0.39);
+          box-shadow: 0px 6px 11px -3px rgba(102, 45, 145, 0.39);
+}
+
+.header_section .main_nav .menu_items .dropdown .dropdown_menu li {
+  padding: 0.2rem 2rem;
+}
+
+.header_section .main_nav .menu_items .dropdown .dropdown_menu li:hover {
+  background: #F2F4FF;
+}
+
+.header_section .main_nav .menu_items .dropdown .dropdown_menu li:hover a {
+  color: #662d91;
+}
+
+.header_section .main_nav .menu_items .dropdown .dropdown_menu li:first-child {
+  padding-top: 0.5rem;
+}
+
+.header_section .main_nav .menu_items .dropdown .dropdown_menu li:last-child {
+  padding-bottom: 0.5rem;
+}
+/*# sourceMappingURL=header.css.map */

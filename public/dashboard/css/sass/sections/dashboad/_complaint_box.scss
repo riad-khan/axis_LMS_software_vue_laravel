@@ -1,0 +1,45 @@
+.complaint_box {
+  margin-top: 2.5rem;
+
+  .heading_info {
+    margin-bottom: 1.6rem;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.6;
+      color: $primary-color;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $info-color;
+      line-height: 1.6;
+    }
+  }
+
+  .tork-form-control {
+    background: $primary-gradient-color;
+    border-radius: 1rem;
+    border-color: $border_color;
+    border-width: 2px;
+    color: $info-color;
+    padding: 0.4rem 0.9rem;
+    font-family: $primany-font;
+  }
+
+  .custom_dropdown {
+    width: 100%;
+  }
+
+  .submit_btn {
+    text-align: right;
+
+    button {
+      font-size: 1rem;
+      padding: 0.5rem 3rem;
+    }
+  }
+}

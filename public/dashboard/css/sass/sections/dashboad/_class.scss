@@ -1,0 +1,73 @@
+.classes {
+  margin-top: 2rem;
+  width: 100%;
+
+  .tork-card {
+    border-radius: 1rem;
+    background: $primary-gradient-color;
+    overflow: hidden;
+    border: 1px solid $border_color;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    transition: all .3s ease;
+  }
+
+  .tork-card:hover {
+    box-shadow: 0px -1px 25px -3px $info-color;
+  }
+
+  .section_heading {
+    margin-top: 2rem;
+
+    .title {
+      font-size: 1.6rem;
+      color: $primary-color;
+      text-transform: capitalize;
+      line-height: 1.9;
+      font-weight: 600;
+    }
+  }
+
+  .section_heading:first-child {
+    margin-top: 0;
+  }
+
+  .class_list {
+    .class_info {
+      .class_title {
+        flex-wrap: wrap;
+
+        h3 {
+          font-size: 1rem;
+          color: $primary-color;
+          font-weight: 600;
+        }
+        .live {
+          color: $danger-color;
+          font-weight: 600;
+        }
+      }
+
+      p {
+        font-size: 0.8rem;
+        color: $info-color;
+      }
+      .date_time {
+        font-size: 0.8rem;
+        color: $info-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .classes {
+    .section_heading {
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

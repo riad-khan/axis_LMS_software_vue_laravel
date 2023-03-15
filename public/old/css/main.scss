@@ -1,0 +1,49 @@
+@import "sass/global-css/global";
+//------------------- components
+@import "sass/includes/components/cards";
+@import "sass/includes/components/button";
+@import "sass/includes/components/forms";
+@import "sass/includes/components/custom_selectbox";
+
+// ------------------- body color declear
+.body {
+  background: rgba(243, 243, 243, 0.5);
+}
+// body circle color
+.circle_1,
+.circle_2 {
+  width: 600px;
+  height: 100%;
+  background: $secondary-gradient-color;
+  opacity: 0.2;
+  filter: blur(200px);
+  position: absolute;
+  border-radius: 0 50% 50% 0;
+  z-index: -2;
+}
+
+.circle_1 {
+  top: 26%;
+  left: 0;
+}
+.circle_2 {
+  top: 26%;
+  right: 0;
+}
+
+// ------------------- Sections
+@import "sass/sections/header";
+@import "sass/sections/hero_section";
+@import "sass/sections/feature_section";
+@import "sass/sections/courses_section";
+@import "sass/sections/testimonial_section";
+@import "sass/sections/countdown_section";
+@import "sass/sections/newsletter_section";
+@import "sass/sections/footer_section";
+@import "sass/sections/page_header";
+@import "sass/sections/courses_page_filter_section";
+@import "sass/sections/course_details";
+@import "sass/sections/membership_form";
+@import "sass/sections/_privacy_policy";
+@import "sass/sections/about_us";
+@import "sass/sections/contact";

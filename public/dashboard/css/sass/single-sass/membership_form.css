@@ -1,0 +1,268 @@
+.tork-text-primary {
+  color: #662d91 !important;
+}
+
+.tork-text-primary-gradient {
+  color: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+}
+
+.tork-text-secondary {
+  color: #6c757d !important;
+}
+
+.tork-text-success {
+  color: #198754 !important;
+}
+
+.tork-text-info {
+  color: #bea7cf !important;
+}
+
+.tork-text-warning {
+  color: #ffce31 !important;
+}
+
+.tork-text-danger {
+  color: #e35a5a !important;
+}
+
+.tork-text-light {
+  color: #d7d7d7 !important;
+}
+
+.tork-text-white {
+  color: #ffffff !important;
+}
+
+.tork-text-dark {
+  color: #000000 !important;
+}
+
+.tork-bg-primary {
+  background: #662d91 !important;
+}
+
+.tork-bg-primary-gradient {
+  background: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+}
+
+.tork-bg-secondary {
+  background: #6c757d !important;
+}
+
+.tork-bg-success {
+  background: #198754 !important;
+}
+
+.tork-bg-info {
+  background: #bea7cf !important;
+}
+
+.tork-bg-warning {
+  background: #ffce31 !important;
+}
+
+.tork-bg-danger {
+  background: #e35a5a !important;
+}
+
+.tork-bg-light {
+  background: #d7d7d7 !important;
+}
+
+.tork-bg-white {
+  background: #ffffff !important;
+}
+
+.tork-bg-dark {
+  background: #000000 !important;
+}
+
+.form_nav_section {
+  padding: 4rem 0;
+}
+
+.form_nav_section .steps {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  counter-reset: step;
+}
+
+.form_nav_section .steps li {
+  width: 25%;
+  position: relative;
+  color: #bea7cf;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.form_nav_section .steps li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background: #bea7cf;
+  border-radius: 50%;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto 0.7rem auto;
+}
+
+.form_nav_section .steps li::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #bea7cf;
+  position: absolute;
+  top: 1.7rem;
+  left: -50%;
+  z-index: -1;
+}
+
+.form_nav_section .steps li:first-child::after {
+  content: none;
+}
+
+.form_nav_section .steps li.active {
+  color: #662d91;
+}
+
+.form_nav_section .steps li.active::before {
+  background: #662d91;
+}
+
+.form_nav_section .steps li.active::after {
+  background: #662d91;
+}
+
+.form_section .form_group label {
+  font-weight: 500;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: #662d91;
+}
+
+.form_section .form_group .tork-form-control {
+  background: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border-radius: 0.5rem;
+  border-color: #ffffff;
+  border-width: 2px;
+  color: #858585;
+  padding: 0.4rem 0.9rem;
+}
+
+.form_section .next_btn {
+  padding: 0.5rem 4rem;
+  border-radius: 0.75rem;
+  letter-spacing: 1px;
+  float: right;
+}
+
+.form_section .personal_info,
+.form_section .eductional_details,
+.form_section .addition_details,
+.form_section .complete_form {
+  padding-bottom: 4rem;
+}
+
+.form_section .eductional_details {
+  display: none;
+}
+
+.form_section .addition_details {
+  display: none;
+}
+
+.form_section .complete_form {
+  display: none;
+  overflow: hidden;
+}
+
+.form_section .complete_form .student_img {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid rgba(96, 110, 180, 0.2);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.form_section .complete_form .student_img img {
+  max-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.form_section .complete_form .tork-file-input .tork-form-control {
+  background: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border-radius: 0.5rem;
+  border-color: #ffffff;
+  border-width: 2px;
+  color: #858585;
+  padding: 0.4rem 0.9rem;
+  margin: 1rem 0;
+}
+
+.form_section .faq_box {
+  padding: 1.75rem;
+  background: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border: #ffffff;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+}
+
+.form_section .faq_box h3 {
+  font-size: 0.9rem;
+  color: #662d91;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.form_section .faq_box .question_item {
+  margin-top: 1rem;
+}
+
+.form_section .faq_box .question_item:first-child {
+  margin-top: 0;
+}
+
+.form_section .faq_box .question_item h4 {
+  font-size: 0.85rem;
+  color: #662d91;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.form_section .faq_box .question_item p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #662d91;
+  font-weight: 400;
+}
+
+.form_section .tork-checkbox input:checked ~ .tork-checkmark {
+  background-color: transparent;
+}
+
+.form_section .tork-checkbox .tork-checkmark::after {
+  border-color: #662d91;
+}
+
+.form_section .tork-checkmark {
+  background: transparent;
+}
+/*# sourceMappingURL=membership_form.css.map */

@@ -1,0 +1,234 @@
+.tork-form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.tork-form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: unquote($primary-color + "55");
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem unquote($primary-color + "25");
+}
+
+label {
+  display: inline-block;
+}
+
+.tork-form-label {
+  margin-bottom: 0.5rem;
+}
+
+.tork-form-text {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+
+//   checkbox
+.tork-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  user-select: none;
+  line-height: 22px;
+  margin-right: 20px;
+}
+
+.tork-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.tork-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #ccc;
+  border: 2px solid #888;
+  border-radius: 3px;
+}
+
+.tork-checkbox:hover input ~ .tork-checkmark {
+  background-color: #ccc;
+}
+
+.tork-checkbox input:checked ~ .tork-checkmark {
+  background-color: #2196f3;
+}
+
+.tork-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.tork-checkbox input:checked ~ .tork-checkmark:after {
+  display: block;
+}
+
+.tork-checkbox .tork-checkmark:after {
+  left: 4px;
+  top: -1px;
+  width: 8px;
+  height: 14px;
+  border: solid $white-color;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+//switch toggle
+.tork-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.tork-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.tork-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.tork-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .tork-slider {
+  background-color: #2196f3;
+}
+
+input:focus + .tork-slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .tork-slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded tork-sliders */
+.tork-slider.tork-switch-round {
+  border-radius: 34px;
+}
+
+.tork-slider.tork-switch-round:before {
+  border-radius: 50%;
+}
+// custom radio button
+.tork-rodio-container {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  line-height: 20px;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .tork-rodio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #888;
+  }
+
+  input:checked ~ .tork-rodio {
+    background-color: $primary-color;
+  }
+
+  .tork-rodio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  input:checked ~ .tork-rodio:after {
+    display: block;
+  }
+
+  .tork-rodio::after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.tork-rodio-container:hover input ~ .tork-rodio {
+  background-color: #ccc;
+}
+
+// Custom file input
+.tork-file-input {
+  position: relative;
+
+  .tork-form-control[type="file"] {
+    overflow: hidden;
+  }
+
+  label {
+    position: absolute;
+    background-color: $primary-color;
+    color: $white-color;
+    font-size: 0.85rem;
+    padding: 0.5rem 1.7rem;
+    border-radius: 0.4rem 0 0 0.4rem;
+    top: 0;
+    height: 100%;
+    line-height: 25px;
+    width: 102px;
+  }
+}

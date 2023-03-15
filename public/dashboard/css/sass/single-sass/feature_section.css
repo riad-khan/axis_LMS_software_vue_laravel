@@ -1,0 +1,114 @@
+.tork-text-primary {
+  color: #662d91 !important;
+}
+
+.tork-text-primary-gradient {
+  color: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+}
+
+.tork-text-secondary {
+  color: #6c757d !important;
+}
+
+.tork-text-success {
+  color: #198754 !important;
+}
+
+.tork-text-info {
+  color: #bea7cf !important;
+}
+
+.tork-text-warning {
+  color: #ffce31 !important;
+}
+
+.tork-text-danger {
+  color: #e35a5a !important;
+}
+
+.tork-text-light {
+  color: #d7d7d7 !important;
+}
+
+.tork-text-white {
+  color: #ffffff !important;
+}
+
+.tork-text-dark {
+  color: #000000 !important;
+}
+
+.tork-bg-primary {
+  background: #662d91 !important;
+}
+
+.tork-bg-primary-gradient {
+  background: linear-gradient(234.06deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%) !important;
+}
+
+.tork-bg-secondary {
+  background: #6c757d !important;
+}
+
+.tork-bg-success {
+  background: #198754 !important;
+}
+
+.tork-bg-info {
+  background: #bea7cf !important;
+}
+
+.tork-bg-warning {
+  background: #ffce31 !important;
+}
+
+.tork-bg-danger {
+  background: #e35a5a !important;
+}
+
+.tork-bg-light {
+  background: #d7d7d7 !important;
+}
+
+.tork-bg-white {
+  background: #ffffff !important;
+}
+
+.tork-bg-dark {
+  background: #000000 !important;
+}
+
+.feature_section {
+  padding: 1rem 0;
+}
+
+.feature_section .feature_inner {
+  padding: 2rem 4rem;
+  -webkit-box-shadow: 0px 6px 25px -10px rgba(102, 45, 145, 0.39);
+          box-shadow: 0px 6px 25px -10px rgba(102, 45, 145, 0.39);
+}
+
+.feature_section .feature_inner .icon_img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.feature_section .feature_inner .icon_img img {
+  width: 100%;
+  height: auto;
+}
+
+.feature_section .feature_inner .info h2 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #662d91;
+}
+
+.feature_section .feature_inner .info p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #858585;
+  list-style: 1.7rem;
+}
+/*# sourceMappingURL=feature_section.css.map */

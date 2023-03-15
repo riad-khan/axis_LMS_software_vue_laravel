@@ -1,0 +1,57 @@
+.custom_dropdown {
+  max-width: 100%;
+  position: relative;
+
+  .dropdown_input {
+    padding: 8px 15px;
+    outline: 0;
+    border: 1px solid $border_color;
+    background: $primary-gradient-color;
+    border-radius: 5px;
+    width: 100%;
+    color: $primary-color;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    border: 1px solid $border_color;
+    width: 100%;
+    margin: 0;
+    display: block;
+    border-radius: 4px;
+    z-index: 999;
+    background-color: #fff;
+    overflow: hidden;
+    display: none;
+
+    li:hover {
+      background: $body_bg_color_1;
+    }
+  }
+
+  li {
+    padding: 6px 15px;
+    font-size: 1rem;
+    color: $primary-color;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-transform: capitalize;
+  }
+
+  .active_dropdown {
+    display: block;
+  }
+
+  &::after {
+    content: "\025be";
+    font-size: 1.7rem;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+  }
+}

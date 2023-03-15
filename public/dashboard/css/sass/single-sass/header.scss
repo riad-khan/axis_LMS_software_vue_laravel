@@ -1,0 +1,142 @@
+@import '../includes/colors';
+.header_section {
+  // Top nav bar
+
+  .top_navbar {
+    background: $home_light_bg;
+    padding: 0.2rem 0;
+
+    .contact_info {
+      align-items: center;
+
+      a {
+        color: $dark-color;
+        margin-left: 1rem;
+        font-size: 0.875rem;
+        line-height: 3;
+        font-weight: 400;
+
+        span {
+          margin-right: 0.5rem;
+          font-size: 1rem;
+          color: $primary-color;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .social_link {
+      align-items: center;
+
+      a {
+        font-size: 1.4rem;
+        color: $primary-color;
+        margin-left: 0.75rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:hover {
+          color: $dark-color;
+        }
+      }
+    }
+  }
+
+  // Main nav
+  .main_nav {
+    .logo {
+      width: 15rem;
+      padding: 0.625rem 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .menu_items {
+      margin-top: 1rem;
+
+      .nav_link {
+        padding: 0.625rem 2rem;
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: capitalize;
+        line-height: 1.8;
+
+        a {
+          color: $dark-color;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .nav_btn {
+        a {
+          padding: 0.5rem 2.5rem;
+          font-weight: 500;
+          border-radius: 1rem;
+          box-shadow: 0px 6px 11px -3px $shadow_color;
+        }
+      }
+
+      .active {
+        a {
+          color: $primary-color;
+        }
+      }
+
+      // dropdown
+      .dropdown {
+        cursor: pointer;
+        &:hover {
+          color: $primary-color;
+
+          .dropdown_menu {
+            display: block;
+          }
+        }
+        .dropdown_menu {
+          position: absolute;
+          background: $white-color;
+          border: 1px solid $border_color_2;
+          z-index: 9;
+          margin-top: 8px;
+          border-radius: 0.2rem;
+          overflow: hidden;
+          display: none;
+          width: 12rem;
+          transition: 0.3s;
+          box-shadow: 0px 6px 11px -3px $shadow_color;
+
+          li {
+            padding: 0.2rem 2rem;
+            &:hover {
+              background: $home_light_bg;
+            }
+
+            &:hover a {
+              color: $primary-color;
+            }
+
+            &:first-child {
+              padding-top: 0.5rem;
+            }
+            &:last-child {
+              padding-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

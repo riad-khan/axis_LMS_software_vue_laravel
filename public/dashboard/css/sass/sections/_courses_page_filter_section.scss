@@ -1,0 +1,40 @@
+.all_courses_page {
+    .courses_section {
+        padding-top: 2rem;
+    }
+
+  .courses_page_filter_section {
+    padding-top: 4rem;
+
+    .live-class {
+      line-height: 2.3rem;
+      font-weight: 500;
+      color: $danger-color;
+    }
+
+    .custom_dropdown {
+      .dropdown_input {
+        border-color: $border_color_2;
+        border-radius: 0.5rem;
+      }
+    }
+
+    .search_box {
+      position: relative;
+
+      .search_input {
+        border-radius: 0.5rem;
+        background: $primary-gradient-color;
+        border-color: $border_color_2;
+      }
+
+      span {
+        position: absolute;
+        top: 12px;
+        right: 9px;
+        color: $info-color;
+        font-size: 1rem;
+      }
+    }
+  }
+}

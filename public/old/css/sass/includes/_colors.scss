@@ -1,0 +1,63 @@
+$primary-color: #662d91;
+$secondary-color: #6c757d;
+$success-color: #198754;
+$danger-color: #e35a5a;
+$warning-color: #ffce31;
+$info-color: #bea7cf;
+$light-color: #d7d7d7;
+$white-color: #ffffff;
+$dark-color: #000000;
+$muted-color: #858585;
+// Fornt website  corlor
+$home_light_bg: #F2F4FF;
+$shadow_color: rgba(102,45,145,0.39);
+
+// Gradients
+$primary-gradient-color: linear-gradient(
+  234.06deg,
+  rgba(255, 255, 255, 0.2) 0%,
+  rgba(255, 255, 255, 0.6) 100%
+);
+
+$secondary-gradient-color: linear-gradient(90deg, #80d8ff 0%, #ea80fc 100%);
+
+// ----------- body text and background color global
+$body-text-color: #374a5e;
+$body_bg_color_1: linear-gradient(
+  90deg,
+  rgba(128, 216, 255, 0.45) 0%,
+  rgba(234, 128, 252, 0.4) 100%
+);
+$body_bg_color_2: linear-gradient(0deg, #ffffff, #ffffff);
+
+// ------------- border colors
+$border_color: rgba(255, 255, 255, 0.568);
+$border_color_2: rgba(96, 110, 180, 0.2);
+$border_color_3: rgba(255, 255, 255, 0.8);
+
+// --------------------Text-colors
+$tork-theme-colors: (
+  primary: $primary-color,
+  primary-gradient: $primary-gradient-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  info: $info-color,
+  warning: $warning-color,
+  danger: $danger-color,
+  light: $light-color,
+  white: $white-color,
+  dark: $dark-color,
+);
+
+@each $name, $color in $tork-theme-colors {
+  .#{tork-text- + $name} {
+    color: $color !important;
+  }
+}
+
+//------------------- Background colors
+@each $name, $color in $tork-theme-colors {
+  .#{tork-bg- + $name} {
+    background: $color !important;
+  }
+}

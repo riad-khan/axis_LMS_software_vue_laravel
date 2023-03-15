@@ -1,0 +1,29 @@
+@import '../includes/colors';
+
+.about_us_section {
+  padding: 4rem 0;
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: $primary-color;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    color: $primary-color;
+    line-height: 1.7;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+  }
+
+  .right_img {
+    img {
+      border-radius: 0.5rem;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

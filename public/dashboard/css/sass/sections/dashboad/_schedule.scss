@@ -1,0 +1,140 @@
+.schedule {
+  margin-top: 2rem;
+  width: 100%;
+
+  .tork-card {
+    border-radius: 1rem;
+    background: $primary-gradient-color;
+    overflow: hidden;
+    border: 1px solid $border_color;
+    display: inline-block;
+    width: 100%;
+    flex: 1;
+  }
+
+  .schedule_container {
+    flex-wrap: wrap;
+
+    .card_inner {
+      .thumb-img {
+        width: 11rem;
+        height: auto;
+        border: 1px solid $border_color;
+        border-radius: 1rem;
+      }
+    }
+    .info {
+      width: 40%;
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $info-color;
+      }
+    }
+    .date_time_btn {
+      text-align: center;
+      padding-right: 1.4rem;
+
+      p {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: $primary-color;
+      }
+      a {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .upcoming_notice {
+    padding: 1.4rem;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+    .notice_info {
+      p {
+        font-size: 0.7rem;
+        color: $primary-color;
+      }
+      h4 {
+        font-size: 0.9rem;
+        color: $primary-color;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0.4rem 0;
+      }
+
+      .time_btn {
+        margin-top: 0.7rem;
+        a {
+          font-size: 0.7rem;
+          padding: 0.3rem 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .schedule {
+    .date_info {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .schedule_container {
+      .tork-card .info p {
+        font-size: 0.8rem;
+      }
+      .date_info {
+        margin-bottom: 0.4rem;
+
+        p {
+          margin-top: 6px;
+        }
+      }
+
+      .card_inner {
+        flex-wrap: wrap;
+        justify-content: start;
+
+        .thumb-img {
+          width: 100%;
+        }
+      }
+
+      .info {
+        width: 50%;
+        margin: 1.5rem 0;
+        h4 {
+          font-size: 0.9rem;
+        }
+      }
+
+      .date_time_btn {
+        width: 43%;
+        text-align: right;
+        p {
+          font-size: 0.8rem;
+        }
+        a {
+          font-size: 0.8rem;
+          padding: 0.2rem 0.8rem;
+        }
+      }
+    }
+  }
+}

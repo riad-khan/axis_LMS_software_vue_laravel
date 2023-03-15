@@ -1,0 +1,92 @@
+@import '../includes/colors';
+.contact_section {
+  padding: 4rem 0;
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: $primary-color;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    color: $primary-color;
+    line-height: 1.7;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+
+  .contact_info {
+    margin-top: 1.5rem;
+
+    span {
+      font-size: 2rem;
+      color: $primary-color;
+    }
+  }
+  //   contact form
+  .contact_form {
+    padding: 4rem 2rem;
+    background: $primary-color;
+    border-radius: 0.75rem;
+
+    .form_heading {
+      text-align: center;
+      h3 {
+        color: $white-color;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+      }
+      p {
+        color: $white-color;
+        font-size: 0.8rem;
+      }
+    }
+    .form_group {
+      label {
+        color: $white-color;
+        font: 0.8rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .tork-form-control {
+        border-radius: 1rem;
+      }
+    }
+    .button {
+      text-align: center;
+      .sent_btn {
+        background-color: $white-color;
+        border-radius: 1rem;
+        margin-top: 1.5rem;
+        color: $primary-color;
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.google_map {
+  .map {
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+    .contact_section .contact_info {
+       text-align: center;
+    }
+    .contact_section .contact_form {
+        padding: 2.2rem 2rem;
+        margin-top: 2.5rem;
+    }
+}
